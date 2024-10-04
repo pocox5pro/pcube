@@ -6,10 +6,47 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
-  useEffect(() => {
-    emailjs.init('J7e5GZPoMVGKjGlM6')
-  }, [])
+
  const form = useRef()
+
+ 
+ 
+
+ const sendEmail = (e) => {
+  e.preventDefault();
+
+  const serviceId = 'service_1yyk3dl'
+ const templateId = 'template_v9955di'
+ const publicKey = 'J7e5GZPoMVGKjGlM6'
+
+  const formData = new FormData(e.target);
+  const emailData = {
+    from_name: formData.get('name'), 
+    from_email: formData.get('email'), 
+    subject: formData.get('subject'),
+    phone: formData.get('phone'), 
+    message: formData.get('message'), 
+    to_email: "hellopcube@gmail.com",
+    to_name: "Chirag Patel" 
+  };
+
+
+  
+
+  emailjs
+    .send(serviceId, templateId, emailData, publicKey)
+    .then(
+      (result) => {
+        alert("Message sent successfully!");
+        console.log(result.text);
+      },
+      (error) => {
+        alert("Error sending message. Please try again.");
+        console.log(error.text);
+      }
+    );
+  e.target.reset(); 
+};
   const [hasMounted, setHasMounted] = React.useState(false);
   React.useEffect(() => {
     setHasMounted(true);
@@ -21,36 +58,7 @@ const Contact = () => {
  
   
   
-  const sendEmail = (e) => {
-    e.preventDefault();
-  
-    const formData = new FormData(e.target);
-    const emailData = {
-      from_name: formData.get('name'), 
-      to_email: formData.get('email'), 
-      subject: formData.get('subject'),
-      phone: formData.get('phone'), 
-      message: formData.get('message'), 
-      from_email: "hellopcube@gmail.com", 
-    };
-
-  
-    
-  
-    emailjs
-      .sendForm('service_1yyk3dl', 'template_3k6hujf', form.current)
-      .then(
-        (result) => {
-          alert("Message sent successfully!");
-          console.log(result.text);
-        },
-        (error) => {
-          alert("Error sending message. Please try again.");
-          console.log(error.text);
-        }
-      );
-    e.target.reset(); 
-  };
+ 
   
 
   return (
@@ -89,7 +97,7 @@ const Contact = () => {
                 }}
                 initial="hidden"
                 whileInView="visible"
-                transition={{ duration: 1.5, delay: 0.5 }}
+                transition={{ duration: 1.2, delay: 0.25 }}
                 viewport={{ once: true }}
                 className="animate_top shadow-solid-8 dark:border-strokedark xl:p-15 w-full rounded-lg bg-white p-7 dark:border dark:bg-black md:w-3/5 lg:w-3/4"
               >
@@ -213,7 +221,7 @@ const Contact = () => {
                 }}
                 initial="hidden"
                 whileInView="visible"
-                transition={{ duration: 2, delay: 0.1 }}
+                transition={{ duration: 1.2, delay: 0.25 }}
                 viewport={{ once: true }}
                 className="animate_top md:p-7.5 xl:pt-15 w-full md:w-2/5 lg:w-[26%]"
               >

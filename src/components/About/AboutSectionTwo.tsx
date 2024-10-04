@@ -18,7 +18,7 @@ const AboutSectionTwo = () => {
     }}
     initial="hidden"
     whileInView="visible"
-    transition={{ duration: 1.5, delay: 0.5 }}
+    transition={{ duration: 1.2, delay: 0.25 }}
     viewport={{ once: true }}
   >
     <section className="py-16 md:py-20 lg:py-28">

@@ -25,7 +25,7 @@ const Video = () => {
     }}
     initial="hidden"
     whileInView="visible"
-    transition={{ duration: 1.5, delay: 0.5 }}
+    transition={{ duration: 1.2, delay: 0.25 }}
     viewport={{ once: true }}
   > 
     <section className="relative z-10 py-12 md:py-20 lg:py-28">

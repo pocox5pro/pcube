@@ -20,7 +20,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
     }}
     initial="hidden"
     whileInView="visible"
-    transition={{ duration: 1.5, delay: 0.5 }}
+    transition={{ duration: 1.2, delay: 0.25 }}
     viewport={{ once: true }}
   >
     <div className="w-full">

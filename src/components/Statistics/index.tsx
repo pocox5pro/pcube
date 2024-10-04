@@ -32,7 +32,7 @@ const Statistics = () => {
       }}
       initial="hidden"
       whileInView="visible"
-      transition={{ duration: 1.5, delay: 0.5 }}
+      transition={{ duration: 1.2, delay: 0.25 }}
       viewport={{ once: true }}
     >
       <section id="statistics" className="pt-16 md:pt-20 lg:pt-28">
