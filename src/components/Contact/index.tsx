@@ -158,7 +158,6 @@ const Contact = () => {
                   <div className="flex flex-wrap gap-4 xl:justify-between ">
                     <div className="mb-4 flex cursor-pointer md:mb-0">
                       <input
-                      style={{ position: 'relative', zIndex: 10 }}
                         id="default-checkbox"
                         type="checkbox"
                         className="peer sr-only"
