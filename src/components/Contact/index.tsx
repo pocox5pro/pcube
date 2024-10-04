@@ -191,11 +191,11 @@ const Contact = () => {
                     <button
                       aria-label="send message"
                       type="submit"
-                      className="hover:bg-blackho dark:bg-btndark inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out"
+                      className="hover:bg-gray-700 hover:scale-110 hover:dark:bg-gray-400 inline-flex items-center gap-2.5 rounded-full bg-black dark:bg-gray-200 px-6 py-3 font-medium text-white dark:text-gray-900 duration-300 ease-in-out"
                     >
                       Send Message
                       <svg
-                        className="fill-white"
+                        className="fill-blue-500"
                         width="14"
                         height="14"
                         viewBox="0 0 14 14"
