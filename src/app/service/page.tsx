@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 const Service = () => {
   return (
     <>
-      {/* <Breadcrumb
+      <Breadcrumb
         pageName="Our Services"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-      /> */}
+        description="Discover how PCube Technology empowers businesses with cutting-edge IT solutions. Our services range from custom software development to robust IT support, all designed to enhance efficiency and drive innovation. Let us help you navigate the digital landscape and achieve your objectives with confidence."
+      />
 
       <Features />
 
