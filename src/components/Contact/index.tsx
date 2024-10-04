@@ -111,6 +111,7 @@ const Contact = () => {
                 >
                   <div className="gap-7 mb-8 flex flex-col lg:flex-row lg:justify-between lg:gap-14">
                     <input
+                    style={{ position: 'relative', zIndex: 10 }}
                       type="text"
                       name="name"
                       placeholder="Full name"
@@ -118,6 +119,7 @@ const Contact = () => {
                     />
 
                     <input
+                    style={{ position: 'relative', zIndex: 10 }}
                       type="email"
                        name="email"
                       placeholder="Email address"
@@ -127,6 +129,7 @@ const Contact = () => {
 
                   <div className="gap-7 mb-12 flex flex-col lg:flex-row lg:justify-between lg:gap-14">
                     <input
+                    style={{ position: 'relative', zIndex: 10 }}
                       type="text"
                        name="subject"
                       placeholder="Subject"
@@ -134,6 +137,7 @@ const Contact = () => {
                     />
 
                     <input
+                    style={{ position: 'relative', zIndex: 10 }}
                       type="text"
                        name="phone"
                       placeholder="Phone number"
@@ -143,6 +147,7 @@ const Contact = () => {
 
                   <div className="mb-11 flex">
                     <textarea
+                    style={{ position: 'relative', zIndex: 10 }}
                      name="message"
                       placeholder="Message"
                       rows={4}
@@ -153,6 +158,7 @@ const Contact = () => {
                   <div className="flex flex-wrap gap-4 xl:justify-between ">
                     <div className="mb-4 flex cursor-pointer md:mb-0">
                       <input
+                      style={{ position: 'relative', zIndex: 10 }}
                         id="default-checkbox"
                         type="checkbox"
                         className="peer sr-only"
