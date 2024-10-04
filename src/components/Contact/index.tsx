@@ -228,14 +228,17 @@ const Contact = () => {
                 whileInView="visible"
                 transition={{ duration: 1.2, delay: 0.25 }}
                 viewport={{ once: true }}
-                className="animate_top md:p-7.5 xl:pt-15 w-full md:w-2/5 lg:w-[26%]"
+                className="animate_top md:p-7.5 xl:pt-15 w-full md:w-2/5 lg:w-[26%] "
               >
+                <div style={{ position: 'relative' }}>
                 <h2 className="xl:text-sectiontitle2 mb-12 text-3xl font-semibold text-black dark:text-white">
                   Find us
                 </h2>
+                
 
                 <div className="5 mb-7">
                   <div className="flex gap-2">
+                    <div className="dark:hidden">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -266,6 +269,38 @@ const Contact = () => {
                         ></path>{" "}
                       </g>
                     </svg>
+                    </div>
+                    <div className="hidden dark:flex">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                    >
+                      <g id="SVGRepo_bgCarrier" ></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                          stroke="#FFFFFF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>{" "}
+                        <path
+                          d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                          stroke="#FFFFFF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                    </div>
                     <h3 className="text-metatitle3 mb-4 font-bold text-black dark:text-white">
                       Our Loaction
                     </h3>
@@ -274,6 +309,7 @@ const Contact = () => {
                 </div>
                 <div className="5 mb-7">
                   <div className="flex gap-2">
+                    <div className="dark:hidden">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -308,6 +344,41 @@ const Contact = () => {
                         ></rect>{" "}
                       </g>
                     </svg>
+                    </div>
+                    <div className="hidden dark:flex">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                    >
+                      <g id="SVGRepo_bgCarrier" ></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                          stroke="#FFFFFF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>{" "}
+                        <rect
+                          x="3"
+                          y="5"
+                          width="18"
+                          height="14"
+                          rx="2"
+                          stroke="#FFFFFF"
+                          stroke-linecap="round"
+                        ></rect>{" "}
+                      </g>
+                    </svg>
+                    </div>
                     <h3 className="text-metatitle3 mb-4 font-bold text-black dark:text-white">
                       Email Address
                     </h3>
@@ -315,6 +386,7 @@ const Contact = () => {
                   <p>
                     <a href="#">hellopcube@gmail.com</a>
                   </p>
+                </div>
                 </div>
                 {/* <div>
                   <div className="flex gap-2">
@@ -352,6 +424,7 @@ const Contact = () => {
                     <a href="#">+91 9090 987 678678</a>
                   </p>
                 </div> */}
+                
               </motion.div>
             </div>
           </div>
