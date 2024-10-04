@@ -36,15 +36,15 @@ const menuData: Menu[] = [
     title: "More",
     newTab: false,
     submenu: [
-      {
-        id: 41,
-        title: "About Page",
-        path: "/about",
-        newTab: false,
-      },
+      // {
+      //   id: 41,
+      //   title: "About Us",
+      //   path: "/about",
+      //   newTab: false,
+      // },
       {
         id: 42,
-        title: "Contact Page",
+        title: "Contact Us",
         path: "/contact",
         newTab: false,
       },
