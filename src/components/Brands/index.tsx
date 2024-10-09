@@ -25,7 +25,7 @@ const Brands = () => {
 export default Brands;
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { href, image, imageLight, name, id } = brand;
+  const { image, imageLight, name, id } = brand;
 
   return (
     <motion.a
@@ -44,7 +44,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         whileInView="visible"
         transition={{ duration: 1, delay: 1 }}
         viewport={{ once: true }}
-        href={href}
+        // href={href}
         className="animate_top mx-w-full relative block h-10 w-[150px] px-3 opacity-70 hover:opacity-100 dark:opacity-60 dark:hover:opacity-100"
       >
     {/* <div className="flex w-1/2 items-center justify-center px-3 py-[15px] sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6"> */}
